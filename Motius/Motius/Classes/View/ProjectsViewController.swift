@@ -1,14 +1,14 @@
 //
-//  FirstViewController.swift
+//  ProjectsViewController.swift
 //  Motius
 //
-//  Created by Lorenzo Donini on 19/08/16.
+//  Created by Lorenzo Donini on 18/08/16.
 //  Copyright © 2016 Motius GmbH. All rights reserved.
 //
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class ProjectsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +19,5 @@ class FirstViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
 

@@ -1,14 +1,14 @@
 //
-//  SecondViewController.swift
+//  LoginViewController.swift
 //  Motius
 //
-//  Created by Lorenzo Donini on 19/08/16.
+//  Created by Lorenzo Donini on 18/08/16.
 //  Copyright © 2016 Motius GmbH. All rights reserved.
 //
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
