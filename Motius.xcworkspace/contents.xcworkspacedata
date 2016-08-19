@@ -4,4 +4,10 @@
    <FileRef
       location = "container:Motius/Motius.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:Motius/Motius.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
 </Workspace>

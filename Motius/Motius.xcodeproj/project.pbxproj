@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6DA778975393AC24AB0D17F2 /* Pods_Motius.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 893F897BAA173877299D0A39 /* Pods_Motius.framework */; };
 		7C25947B1D66FA580016CB69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C25947A1D66FA580016CB69 /* AppDelegate.swift */; };
 		7C25947D1D66FA580016CB69 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C25947C1D66FA580016CB69 /* FirstViewController.swift */; };
 		7C25947F1D66FA580016CB69 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C25947E1D66FA580016CB69 /* SecondViewController.swift */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5DC84B655B2A1323AA34794B /* Pods-Motius.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motius.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Motius/Pods-Motius.debug.xcconfig"; sourceTree = "<group>"; };
+		681EAB7C2AD8DA208882EC83 /* Pods-Motius.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motius.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Motius/Pods-Motius.release.xcconfig"; sourceTree = "<group>"; };
 		7C2594771D66FA580016CB69 /* Motius.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Motius.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C25947A1D66FA580016CB69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C25947C1D66FA580016CB69 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +52,7 @@
 		7C2594981D66FA580016CB69 /* MotiusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MotiusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C25949C1D66FA580016CB69 /* MotiusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotiusUITests.swift; sourceTree = "<group>"; };
 		7C25949E1D66FA580016CB69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		893F897BAA173877299D0A39 /* Pods_Motius.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Motius.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DA778975393AC24AB0D17F2 /* Pods_Motius.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +81,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		692B7AEE1086A38B75737789 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5DC84B655B2A1323AA34794B /* Pods-Motius.debug.xcconfig */,
+				681EAB7C2AD8DA208882EC83 /* Pods-Motius.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7C25946E1D66FA580016CB69 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +97,8 @@
 				7C2594901D66FA580016CB69 /* MotiusTests */,
 				7C25949B1D66FA580016CB69 /* MotiusUITests */,
 				7C2594781D66FA580016CB69 /* Products */,
+				692B7AEE1086A38B75737789 /* Pods */,
+				C58CA298F169788BDE5525B7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +144,14 @@
 			path = MotiusUITests;
 			sourceTree = "<group>";
 		};
+		C58CA298F169788BDE5525B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				893F897BAA173877299D0A39 /* Pods_Motius.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +159,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7C2594A11D66FA580016CB69 /* Build configuration list for PBXNativeTarget "Motius" */;
 			buildPhases = (
+				0DC10C2E7000A02B61106BA0 /* 📦 Check Pods Manifest.lock */,
 				7C2594731D66FA580016CB69 /* Sources */,
 				7C2594741D66FA580016CB69 /* Frameworks */,
 				7C2594751D66FA580016CB69 /* Resources */,
+				6A7BF6B6334A4588F90EB960 /* 📦 Embed Pods Frameworks */,
+				3FB4E1F6AD9610B22EBDC230 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,6 +283,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0DC10C2E7000A02B61106BA0 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3FB4E1F6AD9610B22EBDC230 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-Motius/Pods-Motius-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A7BF6B6334A4588F90EB960 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-Motius/Pods-Motius-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7C2594731D66FA580016CB69 /* Sources */ = {
@@ -406,6 +481,7 @@
 		};
 		7C2594A21D66FA580016CB69 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DC84B655B2A1323AA34794B /* Pods-Motius.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Motius/Info.plist;
@@ -417,6 +493,7 @@
 		};
 		7C2594A31D66FA580016CB69 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 681EAB7C2AD8DA208882EC83 /* Pods-Motius.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Motius/Info.plist;
@@ -491,6 +568,7 @@
 				7C2594A31D66FA580016CB69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7C2594A41D66FA580016CB69 /* Build configuration list for PBXNativeTarget "MotiusTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +577,7 @@
 				7C2594A61D66FA580016CB69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7C2594A71D66FA580016CB69 /* Build configuration list for PBXNativeTarget "MotiusUITests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +586,7 @@
 				7C2594A91D66FA580016CB69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
