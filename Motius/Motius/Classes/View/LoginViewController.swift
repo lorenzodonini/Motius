@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import FontAwesome_swift
 
 class LoginViewController: UIViewController {
 
@@ -16,8 +15,6 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //Setting custom icon for login tab bar item
-        self.tabBarItem.image = UIImage.fontAwesomeIconWithName(FontAwesome.SignIn, textColor: UIColor.blackColor(), size: CGSizeMake(30, 30))
     }
 
     override func didReceiveMemoryWarning() {
