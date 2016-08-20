@@ -18,6 +18,9 @@
 		7C2594AF1D6700640016CB69 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2594AC1D6700640016CB69 /* LoginViewController.swift */; };
 		7C2594B01D6700640016CB69 /* UsecaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2594AD1D6700640016CB69 /* UsecaseViewController.swift */; };
 		7C2594B21D670D5A0016CB69 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2594B11D670D5A0016CB69 /* MainViewController.swift */; };
+		7C2594B51D685DB30016CB69 /* Usecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2594B41D685DB30016CB69 /* Usecase.swift */; };
+		7C2594B71D6893180016CB69 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2594B61D6893180016CB69 /* Utils.swift */; };
+		7C2594BB1D6894520016CB69 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2594BA1D6894520016CB69 /* ApiManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,9 @@
 		7C2594AC1D6700640016CB69 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Classes/View/LoginViewController.swift; sourceTree = "<group>"; };
 		7C2594AD1D6700640016CB69 /* UsecaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UsecaseViewController.swift; path = Classes/View/UsecaseViewController.swift; sourceTree = "<group>"; };
 		7C2594B11D670D5A0016CB69 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = Classes/View/MainViewController.swift; sourceTree = "<group>"; };
+		7C2594B41D685DB30016CB69 /* Usecase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Usecase.swift; path = Classes/Model/Usecase.swift; sourceTree = "<group>"; };
+		7C2594B61D6893180016CB69 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Utils/Utils.swift; sourceTree = "<group>"; };
+		7C2594BA1D6894520016CB69 /* ApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ApiManager.swift; path = Classes/API/ApiManager.swift; sourceTree = "<group>"; };
 		893F897BAA173877299D0A39 /* Pods_Motius.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Motius.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -119,6 +125,9 @@
 		7C2594791D66FA580016CB69 /* Motius */ = {
 			isa = PBXGroup;
 			children = (
+				7C2594B91D68942D0016CB69 /* API */,
+				7C2594B81D6893FC0016CB69 /* Utils */,
+				7C2594B31D685D990016CB69 /* Model */,
 				7C2594AA1D6700540016CB69 /* View */,
 				7C25947A1D66FA580016CB69 /* AppDelegate.swift */,
 				7C2594801D66FA580016CB69 /* Main.storyboard */,
@@ -156,6 +165,30 @@
 				7C2594B11D670D5A0016CB69 /* MainViewController.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		7C2594B31D685D990016CB69 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7C2594B41D685DB30016CB69 /* Usecase.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		7C2594B81D6893FC0016CB69 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7C2594B61D6893180016CB69 /* Utils.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		7C2594B91D68942D0016CB69 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				7C2594BA1D6894520016CB69 /* ApiManager.swift */,
+			);
+			name = API;
 			sourceTree = "<group>";
 		};
 		C58CA298F169788BDE5525B7 /* Frameworks */ = {
@@ -351,9 +384,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C2594BB1D6894520016CB69 /* ApiManager.swift in Sources */,
 				7C2594B01D6700640016CB69 /* UsecaseViewController.swift in Sources */,
 				7C2594AF1D6700640016CB69 /* LoginViewController.swift in Sources */,
 				7C2594AE1D6700640016CB69 /* EasterEggViewController.swift in Sources */,
+				7C2594B71D6893180016CB69 /* Utils.swift in Sources */,
+				7C2594B51D685DB30016CB69 /* Usecase.swift in Sources */,
 				7C25947B1D66FA580016CB69 /* AppDelegate.swift in Sources */,
 				7C2594B21D670D5A0016CB69 /* MainViewController.swift in Sources */,
 			);
