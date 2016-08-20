@@ -23,6 +23,13 @@ class LoginViewController: UIViewController {
     }
 
     @IBAction func login() {
+        //Creating controller for the dialog window
+        let alertController = UIAlertController(title: "Hello Motius", message: "", preferredStyle: .Alert)
+        //Creation ok action for the dialog
+        let okAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
+        alertController.addAction(okAction)
+        //Showing the dialog
+        self.presentViewController(alertController, animated: true, completion: nil)
     }
 }
 
