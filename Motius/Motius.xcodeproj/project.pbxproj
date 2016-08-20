@@ -16,7 +16,7 @@
 		7C25949D1D66FA580016CB69 /* MotiusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C25949C1D66FA580016CB69 /* MotiusUITests.swift */; };
 		7C2594AE1D6700640016CB69 /* EasterEggViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2594AB1D6700640016CB69 /* EasterEggViewController.swift */; };
 		7C2594AF1D6700640016CB69 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2594AC1D6700640016CB69 /* LoginViewController.swift */; };
-		7C2594B01D6700640016CB69 /* ProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2594AD1D6700640016CB69 /* ProjectsViewController.swift */; };
+		7C2594B01D6700640016CB69 /* UsecaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2594AD1D6700640016CB69 /* UsecaseViewController.swift */; };
 		7C2594B21D670D5A0016CB69 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2594B11D670D5A0016CB69 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,7 +54,7 @@
 		7C25949E1D66FA580016CB69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C2594AB1D6700640016CB69 /* EasterEggViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EasterEggViewController.swift; path = Classes/View/EasterEggViewController.swift; sourceTree = "<group>"; };
 		7C2594AC1D6700640016CB69 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Classes/View/LoginViewController.swift; sourceTree = "<group>"; };
-		7C2594AD1D6700640016CB69 /* ProjectsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectsViewController.swift; path = Classes/View/ProjectsViewController.swift; sourceTree = "<group>"; };
+		7C2594AD1D6700640016CB69 /* UsecaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UsecaseViewController.swift; path = Classes/View/UsecaseViewController.swift; sourceTree = "<group>"; };
 		7C2594B11D670D5A0016CB69 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = Classes/View/MainViewController.swift; sourceTree = "<group>"; };
 		893F897BAA173877299D0A39 /* Pods_Motius.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Motius.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -152,7 +152,7 @@
 			children = (
 				7C2594AB1D6700640016CB69 /* EasterEggViewController.swift */,
 				7C2594AC1D6700640016CB69 /* LoginViewController.swift */,
-				7C2594AD1D6700640016CB69 /* ProjectsViewController.swift */,
+				7C2594AD1D6700640016CB69 /* UsecaseViewController.swift */,
 				7C2594B11D670D5A0016CB69 /* MainViewController.swift */,
 			);
 			name = View;
@@ -351,7 +351,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C2594B01D6700640016CB69 /* ProjectsViewController.swift in Sources */,
+				7C2594B01D6700640016CB69 /* UsecaseViewController.swift in Sources */,
 				7C2594AF1D6700640016CB69 /* LoginViewController.swift in Sources */,
 				7C2594AE1D6700640016CB69 /* EasterEggViewController.swift in Sources */,
 				7C25947B1D66FA580016CB69 /* AppDelegate.swift in Sources */,

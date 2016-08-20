@@ -1,5 +1,5 @@
 //
-//  ProjectsViewController.swift
+//  UsecaseViewController.swift
 //  Motius
 //
 //  Created by Lorenzo Donini on 18/08/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ProjectsViewController: UIViewController {
+class UsecaseViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()        
