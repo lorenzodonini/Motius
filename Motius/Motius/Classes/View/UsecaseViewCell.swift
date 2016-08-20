@@ -9,6 +9,9 @@
 import UIKit
 
 class UsecaseViewCell: UITableViewCell {
+    @IBOutlet var usecaseImageView: UIImageView!
+    @IBOutlet var titleLabel: UILabel!
+    @IBOutlet var bodyLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
