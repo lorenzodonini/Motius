@@ -21,6 +21,7 @@
 		7C2594B51D685DB30016CB69 /* Usecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2594B41D685DB30016CB69 /* Usecase.swift */; };
 		7C2594B71D6893180016CB69 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2594B61D6893180016CB69 /* Utils.swift */; };
 		7C2594BB1D6894520016CB69 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2594BA1D6894520016CB69 /* ApiManager.swift */; };
+		7C2594BD1D68BB650016CB69 /* UsecaseViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2594BC1D68BB650016CB69 /* UsecaseViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		7C2594B41D685DB30016CB69 /* Usecase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Usecase.swift; path = Classes/Model/Usecase.swift; sourceTree = "<group>"; };
 		7C2594B61D6893180016CB69 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Utils/Utils.swift; sourceTree = "<group>"; };
 		7C2594BA1D6894520016CB69 /* ApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ApiManager.swift; path = Classes/API/ApiManager.swift; sourceTree = "<group>"; };
+		7C2594BC1D68BB650016CB69 /* UsecaseViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UsecaseViewCell.swift; path = Classes/View/UsecaseViewCell.swift; sourceTree = "<group>"; };
 		893F897BAA173877299D0A39 /* Pods_Motius.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Motius.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -163,6 +165,7 @@
 				7C2594AC1D6700640016CB69 /* LoginViewController.swift */,
 				7C2594AD1D6700640016CB69 /* UsecaseViewController.swift */,
 				7C2594B11D670D5A0016CB69 /* MainViewController.swift */,
+				7C2594BC1D68BB650016CB69 /* UsecaseViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -392,6 +395,7 @@
 				7C2594B51D685DB30016CB69 /* Usecase.swift in Sources */,
 				7C25947B1D66FA580016CB69 /* AppDelegate.swift in Sources */,
 				7C2594B21D670D5A0016CB69 /* MainViewController.swift in Sources */,
+				7C2594BD1D68BB650016CB69 /* UsecaseViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
