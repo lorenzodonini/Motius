@@ -21,12 +21,28 @@ class UsecaseViewController: UIViewController {
     private static let cellIdentifier = "usecaseCell"
     
     @IBOutlet var tableView: UITableView!
+    lazy var refreshControl: UIRefreshControl = {
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(UsecaseViewController.loadUsecases), forControlEvents: UIControlEvents.ValueChanged)
+        return refreshControl
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.addSubview(refreshControl)
         
+        //Load use cases through the network
+        loadUsecases()
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
+    @objc internal func loadUsecases() {
+        refreshControl.beginRefreshing()
         apiManager.getUsecases { (usecases: [Usecase]?, error: ErrorType?) in
             if let usecases = usecases {
                 self.usecases = usecases
@@ -39,12 +55,9 @@ class UsecaseViewController: UIViewController {
             }
             dispatch_async(dispatch_get_main_queue(), { () -> Void in
                 self.tableView.reloadData()
-            })            
+                self.refreshControl.endRefreshing()
+            })
         }
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
     }
 }
 
