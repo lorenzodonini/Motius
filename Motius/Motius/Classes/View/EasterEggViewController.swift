@@ -57,6 +57,7 @@ class EasterEggViewController: UIViewController {
     
     override func viewWillDisappear(animated: Bool) {
         downloadedImage = nil
+        pkImageView.image = nil
         currentStatus = nil
         apiManager.cancelLastImageTask()
     }
