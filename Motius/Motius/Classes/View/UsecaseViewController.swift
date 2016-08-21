@@ -43,6 +43,7 @@ class UsecaseViewController: UIViewController {
     
     @objc internal func loadUsecases() {
         refreshControl.beginRefreshing()
+        //Call REST API asynchronously
         apiManager.getUsecases { (usecases: [Usecase]?, error: ErrorType?) in
             if let usecases = usecases {
                 self.usecases = usecases
