@@ -10,6 +10,7 @@ import Foundation
 
 class ApiManager {
     private let session = NSURLSession.sharedSession()
+    private var lastImageTask: NSURLSessionDataTask?
     
     //MARK: REST APIs
     func getUsecases(completionHandler: ([Usecase]?, ErrorType?) -> ()) {
@@ -33,6 +34,25 @@ class ApiManager {
             }
             //Starting task
             task.resume()
+        }
+    }
+    
+    //MARK: Image downloading calls
+    func getImageFromUrl(url: NSURL, completionHandler: (NSData?, ErrorType?) -> ()) {
+        let task = session.dataTaskWithURL(url) { (data, response, error) -> Void in
+            //Passing result to completion handler right away
+            completionHandler(data, error)
+        }
+        lastImageTask = task
+        //Starting task
+        task.resume()
+    }
+    
+    func cancelLastImageTask() {
+        if let task = lastImageTask
+            where task.state == .Completed {
+            task.cancel()
+            lastImageTask = nil
         }
     }
 }
