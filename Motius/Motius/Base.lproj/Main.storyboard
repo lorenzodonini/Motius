@@ -217,10 +217,51 @@
                     <view key="view" contentMode="scaleToFill" id="6eC-Mb-eOi">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A Wild Pokémon has just appeared!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iB0-VZ-cdl">
+                                <rect key="frame" x="165" y="100" width="271" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MLA-5k-zl1">
+                                <rect key="frame" x="210" y="406" width="180" height="30"/>
+                                <color key="backgroundColor" red="0.1215686275" green="0.76862745099999996" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="bBT-kB-qR6"/>
+                                </constraints>
+                                <state key="normal" title="CATCH IT!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="catchIt" destination="Ly6-MC-201" eventType="touchUpInside" id="uXs-si-WAZ"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WX4-YX-4q4">
+                                <rect key="frame" x="175" y="141" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="WX4-YX-4q4" secondAttribute="height" multiplier="1:1" id="GVX-A9-2H3"/>
+                                    <constraint firstAttribute="width" constant="250" id="mm2-i1-1VQ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MLA-5k-zl1" firstAttribute="centerX" secondItem="6eC-Mb-eOi" secondAttribute="centerX" id="3cw-YW-OZt"/>
+                            <constraint firstItem="WX4-YX-4q4" firstAttribute="top" secondItem="iB0-VZ-cdl" secondAttribute="bottom" constant="20" id="PEK-ED-IPU"/>
+                            <constraint firstItem="iB0-VZ-cdl" firstAttribute="centerX" secondItem="6eC-Mb-eOi" secondAttribute="centerX" id="e3X-Ch-P0s"/>
+                            <constraint firstItem="WX4-YX-4q4" firstAttribute="centerX" secondItem="6eC-Mb-eOi" secondAttribute="centerX" id="enI-aZ-8Kd"/>
+                            <constraint firstItem="MLA-5k-zl1" firstAttribute="top" secondItem="WX4-YX-4q4" secondAttribute="bottom" constant="15" id="vTC-ip-wg0"/>
+                            <constraint firstItem="iB0-VZ-cdl" firstAttribute="top" secondItem="eaU-ee-iCE" secondAttribute="bottom" constant="80" id="xl5-HM-Ed9"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Extra" id="QO5-4g-ltP" userLabel="Extra"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="catchButton" destination="MLA-5k-zl1" id="wK9-8N-XbF"/>
+                        <outlet property="pkImageView" destination="WX4-YX-4q4" id="KyV-sp-VLV"/>
+                        <outlet property="statusLabel" destination="iB0-VZ-cdl" id="fSs-Zf-uGh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mg4-Az-k8v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

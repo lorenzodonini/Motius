@@ -9,6 +9,18 @@
 import UIKit
 
 class EasterEggViewController: UIViewController {
+    private let db = ["bulbasaur","charmander","squirtle","pikachu","magikarp","slowpoke"]
+    private let apiManager = ApiManager()
+    private var downloadedImage: NSData?
+    private var currentStatus: String? {
+        didSet {
+            statusLabel.text = currentStatus ?? ""
+        }
+    }
+    
+    @IBOutlet var pkImageView: UIImageView!
+    @IBOutlet var statusLabel: UILabel!
+    @IBOutlet var catchButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()        
