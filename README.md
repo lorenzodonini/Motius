@@ -16,7 +16,7 @@ Please create a small iOS application that displays our usecases.
   * Build a connection, get the JSON object, and parse it in order to display the title and the body element for each object
   * Please build a system where the main thread is not blocked by this action 
   * Feel free to design that screen more beautiful than in our example ;)
-- screen maybe empty. Feel free to hide an easter egg there :)
+- Third screen maybe empty. Feel free to hide an easter egg there :)
 
 The API offered by the platform can be looked up in the code.
 
